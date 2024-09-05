@@ -1,0 +1,9 @@
+$primary-color : green;
+
+@mixin sd(){
+    background-color:$primary-color ;
+}
+
+.nav{
+    @include sd();
+}
