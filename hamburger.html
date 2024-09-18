@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bar{
+            display: none;
+        }
+        #cross{
+            display: none;
+        }
+        #nav{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            background-color: aqua;
+
+        }
+        #nav li a{
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        @media (max-width:1025px){
+            #nav{
+                margin-left:-500px ;
+                display: block;
+                width: 400px;
+            }
+
+            #bar{
+                display: block;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="bar" onclick="shownav()"> click </div>
+    <div id="cross" onclick="hidenav()"> cross </div>
+
+    <ul id="nav">
+        <li><a href="#"> Home </a></li>
+        <li><a href="#"> Home </a></li>
+        <li><a href="#"> Home </a></li>
+        <li><a href="#"> Home </a></li>
+        <li><a href="#"> Home </a></li>
+        <li><a href="#"> Home </a></li>
+    </ul>
+
+    <script src="./hamburger.js"></script>
+</body>
+</html>
