@@ -57,9 +57,6 @@ function data(){
     }
 
     console.log(result)
-
-
-    
 }
 
 
